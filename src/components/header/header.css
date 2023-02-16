@@ -1,0 +1,11 @@
+.header-link {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-title {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
