@@ -6,6 +6,7 @@ import {
   Route,
 } from "react-router-dom"
 
+import Pokedex from './components/pokedex/pokedex';
 import IndexPage from './pages/index-page'
 import Header from './components/header/header';
 import PokemonView from './pages/pokemon-view';
@@ -15,15 +16,17 @@ function App() {
   return (
 
     <div className='main-container'>
-  <Router>
-    <Header />
-    <Routes>
-    <Route path='/' element={<IndexPage />} />
-    <Route path='/pokemon/:id' element={<PokemonView />} />
-    </Routes>
-  </Router>
- </div>
-)
+      <Router>
+        <Header />
+        <Pokedex>
+          <Routes>
+            <Route path='/' element={<IndexPage />} />
+            <Route path='/pokemon/:id' element={<PokemonView />} />
+          </Routes>
+        </Pokedex>
+      </Router>
+    </div>
+  )
 }
 
 export default App;

@@ -1,0 +1,477 @@
+.pokedex {
+    background-color: red;
+    width: 600px;
+    min-width: 500px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 10px black solid;
+}
+
+.pokedex-head {
+    position: absolute;
+    top: 108px;
+    width: 600px;
+    height: 150px;
+    background-color: red;
+    z-index: 1;
+    border-bottom: 7px black solid;
+}
+
+.pokedex-head::after {
+    position: absolute;
+    top: 100px;
+    left: 253px;
+    content: "";
+    background-color: red;
+    width: 330px;
+    height: 50px;
+    transform: skewX(-25deg);
+    border-top: 7px black solid;
+    border-left: 7px black solid;
+
+}
+
+.pokedex-head::before {
+    position: absolute;
+    top: 110px;
+    left: 570px;
+    content: "";
+    background-color: red;
+    width: 30px;
+    height: 50px;
+    z-index: 1;
+}
+
+.pokedex-head-light {
+    position: absolute;
+    width: 600px;
+    height: 10px;
+    background-color: whitesmoke;
+}
+
+.pokedex-head-light::after {
+    position: absolute;
+    content: "";
+    background-color: whitesmoke;
+    width: 10px;
+    height: 150px;
+}
+
+.big-button {
+    position: relative;
+    top: 15px;
+    left: 30px;
+    border-radius: 50%;
+    background-color: lightgray;
+    width: 120px;
+    height: 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.big-button-border {
+    position: absolute;
+    border: 4px black solid;
+    border-radius: 50%;
+    width: 80%;
+    height: 80%;
+    background-color: skyblue;
+}
+
+.big-button-border::after {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-color: skyblue;
+    filter: brightness(1.45);
+    border-radius: 50%;
+}
+
+.big-button-border::before {
+    position: absolute;
+    top: 35px;
+    left: 33px;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: skyblue;
+    filter: brightness(1.45);
+    border-radius: 50%;
+}
+
+.little-button-container {
+    position: absolute;
+    bottom: 90px;
+    left: 160px;
+    width: 125px;
+    height: 30px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.little-button {
+    border: 5px black solid;
+    width: 30px;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.little-button-red {
+    background-color: brown;
+}
+
+.little-button-red::before {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: brown;
+    filter: brightness(1.45);
+    border-radius: 50%;
+}
+
+.little-button-orange {
+    background-color: orange;
+}
+
+.little-button-orange::before {
+    position: absolute;
+    top: 8px;
+    left: 52px;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: orange;
+    filter: brightness(1.45);
+    border-radius: 50%;
+}
+
+.little-button-green {
+    background-color: greenyellow;
+}
+
+.little-button-green::before {
+    position: absolute;
+    top: 8px;
+    left: 95px;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: greenyellow;
+    filter: brightness(1.75);
+    border-radius: 50%;
+}
+
+.screen {
+    position: relative;
+    background-color: lightgray;
+    padding: 50px;
+    border: 7px black solid;
+    border-radius: 5px;
+}
+
+.screen::before {
+    content: '';
+    position: absolute;
+    top: 281px;
+    left: -38px;
+    background-color: red;
+    border-right: 7px black solid;
+    transform: skewX(15deg);
+    width: 50px;
+    height: 140px;
+}
+
+.screen::after {
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    border: 7px solid black;
+}
+
+.skew {
+    position: absolute;
+    top: 18px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #404040;
+}
+
+.skew-left {
+    left: 180px;
+}
+
+.skew-right {
+    left: 270px;
+}
+
+.sound-speaker-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 375px;
+    left: 360px;
+    width: 40px;
+    height: 30px;
+}
+
+.sound-speaker {
+
+    width: 40px;
+    height: 5px;
+    background-color: black;
+}
+
+.pokedex-command-container {
+    position: absolute;
+    top: 430px;
+    left: -50px;
+    width: 550px;
+    height: 150px;
+}
+
+.cross-container {
+    position: absolute;
+    left: 430px;
+    top: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.cross-side {
+    position: absolute;
+    top: 33%;
+    width: 100%;
+    height: 33%;
+    background-color: #707070;
+    border-radius: 5px;
+}
+
+.cross-side::before {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    width: 30px;
+    height: 30px;
+    border: 5px black solid;
+    border-right: none;
+    border-radius: 5px;
+}
+
+.cross-side::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 65px;
+    width: 30px;
+    height: 30px;
+    border: 5px black solid;
+    border-left: none;
+    z-index: 1;
+    border-radius: 5px;
+
+}
+
+.cross-height {
+    position: absolute;
+    left: 33%;
+    width: 33%;
+    height: 100%;
+    background-color: #707070;
+    border-radius: 5px;
+}
+
+.cross-height::before {
+    content: '';
+    position: absolute;
+    right: -3px;
+    top: 0px;
+    width: 30px;
+    height: 30px;
+    border: 5px black solid;
+    border-bottom: none;
+    border-radius: 5px;
+
+}
+
+.cross-height::after {
+    content: '';
+    position: absolute;
+    top: 65px;
+    right: -3px;
+    width: 30px;
+    height: 30px;
+    border: 5px black solid;
+    border-top: none;
+    z-index: 1;
+    border-radius: 5px;
+
+}
+
+.cross-rounded {
+    position: absolute;
+    top: 35px;
+    left: 34px;
+    border-radius: 50%;
+    background-color: #404040;
+    height: 30px;
+    width: 30px;
+}
+
+.cross-button {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+}
+
+.cross-button-up {
+    top: 4px;
+}
+
+.cross-button-left {
+    top: 2px;
+    left: 2px;
+}
+
+.cross-button-right {
+    top: 2px;
+    left: 70px;
+}
+
+.cross-button-down {
+    top: 70px;
+}
+
+.joystick {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border: 10px black solid;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    background-color: #404040;
+}
+
+.select-button-container {
+    position: absolute;
+    top: 10px;
+    left: 155px;
+    width: 250px;
+    height: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.select-button {
+    width: 100px;
+    height: 25px;
+    border-radius: 15px;
+    border: 6px black solid;
+}
+
+.select-button-left {
+    background-color: aqua;
+}
+
+.select-button-left::after {
+    position: absolute;
+    top: 14px;
+    left: 6px;
+    content: '';
+    width: 88px;
+    height: 7px;
+    border-radius: 0px 0px 15px 15px;
+    background-color: aqua;
+    filter: brightness(0.55);
+}
+
+.select-button-right {
+    background-color: greenyellow;
+}
+
+.select-button-right::after {
+    position: absolute;
+    top: 14px;
+    left: 156px;
+    content: '';
+    width: 88px;
+    height: 7px;
+    border-radius: 0px 0px 15px 15px;
+    background-color: greenyellow;
+    filter: brightness(0.55);
+}
+
+.search-container {
+    position: absolute;
+    left: 170px;
+    top: 50px;
+    width: 200px;
+    height: 70px;
+    border: 8px black solid;
+    border-radius: 15px;
+    background-color: greenyellow;
+}
+
+.flapper {
+    position: absolute;
+    top: -203px;
+    left: 535px;
+    width: 40px;
+    height: 800px;
+    background-color: red;
+    border: 10px black solid;
+}
+
+.flapper::after {
+    position: absolute;
+    content: "";
+    background-color: whitesmoke;
+    width: 20px;
+    height: 800px;
+}
+
+.join {
+    position: absolute;
+    top: 150px;
+    width: 40px;
+    height: 10px;
+    background-color: black;
+    z-index: 1;
+}
+
+.join2 {
+    top: 170px;
+}
+
+.join3 {
+    top: 600px;
+}
+
+.join4 {
+    top: 620px;
+}
