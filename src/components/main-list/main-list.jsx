@@ -19,7 +19,7 @@ function MainList() {
   return (
     <>
       <div>
-        <ul>
+        <ul id="pokemon-list">
           {listOfPokemon.map((pokemon, index) => (
             <Link to={"/pokemon/" + (index + 1)} key={pokemon.name}>
               <li key={pokemon.name} className="list-of-pokemon">

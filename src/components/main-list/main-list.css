@@ -1,3 +1,8 @@
+#pokemon-list {
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
 ul {
   margin-left: auto;
   margin-right: auto;
