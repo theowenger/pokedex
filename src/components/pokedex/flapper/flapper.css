@@ -1,0 +1,43 @@
+.flapper {
+    position: relative;
+    bottom: 315px;
+    left: 310px;
+    width: 690px;
+    height: 40px;
+    background-color: whitesmoke;
+    border: 10px black solid;
+
+    z-index: 3;
+    transform: rotate(90deg);
+}
+
+.flapper::after {
+    position: absolute;
+    content: "";
+    background-color: red;
+    width: 690px;
+    height: 20px;
+}
+
+.join {
+    position: absolute;
+    left: 180px;
+    width: 10px;
+    height: 40px;
+    background-color: black;
+    z-index: 1;
+}
+
+.join2 {
+    left: 200px;
+}
+
+.join3 {
+    left: 480px;
+
+}
+
+.join4 {
+    left: 500px;
+
+}

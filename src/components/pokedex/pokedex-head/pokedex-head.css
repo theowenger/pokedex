@@ -1,0 +1,196 @@
+.pokedex-head {
+    position: relative;
+
+    width: 660px;
+    height: 150px;
+    background-color: red;
+    z-index: 1;
+    border-bottom: 7px black solid;
+}
+
+.pokedex-head::after {
+    position: absolute;
+    top: 100px;
+    left: 253px;
+    content: "";
+    background-color: red;
+    width: 350px;
+    height: 50px;
+    transform: skewX(-25deg);
+    border-top: 7px black solid;
+    border-left: 7px black solid;
+
+}
+
+.pokedex-head::before {
+    position: absolute;
+    top: 125px;
+    left: 590px;
+    content: "";
+    background-color: red;
+    width: 30px;
+    height: 50px;
+    z-index: 1;
+}
+
+.pokedex-head-light {
+    position: absolute;
+    width: 660px;
+    height: 10px;
+    background-color: whitesmoke;
+}
+
+.pokedex-head-light::after {
+    position: absolute;
+    content: "";
+    background-color: whitesmoke;
+    width: 10px;
+    height: 150px;
+}
+
+.pokemon-head-shadow {
+    position: absolute;
+    left: 280px;
+    top: 106px;
+    background-color: red;
+    opacity: 0.8;
+    filter: brightness(0.75);
+    width: 340px;
+    height: 20px;
+    z-index: 1;
+}
+
+.pokemon-head-shadow::before {
+    content: "";
+    position: absolute;
+    right: 347px;
+    background-color: red;
+    width: 20px;
+    height: 70px;
+    transform: skewX(-25deg);
+}
+
+.pokemon-head-shadow::after {
+    content: "";
+    position: absolute;
+    right: 371px;
+    top: 50px;
+    background-color: red;
+    width: 250px;
+    height: 20px;
+}
+
+.big-button {
+    position: relative;
+    top: 15px;
+    left: 30px;
+    border-radius: 50%;
+    background-color: lightgray;
+    width: 120px;
+    height: 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.big-button-border {
+    position: absolute;
+    border: 4px black solid;
+    border-radius: 50%;
+    width: 80%;
+    height: 80%;
+    background-color: skyblue;
+}
+
+.big-button-border::after {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-color: skyblue;
+    filter: brightness(1.45);
+    border-radius: 50%;
+}
+
+.big-button-border::before {
+    position: absolute;
+    top: 35px;
+    left: 33px;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: skyblue;
+    filter: brightness(1.45);
+    border-radius: 50%;
+}
+
+.little-button-container {
+    position: absolute;
+    bottom: 90px;
+    left: 160px;
+    width: 125px;
+    height: 30px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.little-button {
+    border: 5px black solid;
+    width: 30px;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.little-button-red {
+    background-color: brown;
+}
+
+.little-button-red::before {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: brown;
+    filter: brightness(1.45);
+    border-radius: 50%;
+}
+
+.little-button-orange {
+    background-color: orange;
+}
+
+.little-button-orange::before {
+    position: absolute;
+    top: 8px;
+    left: 52px;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: orange;
+    filter: brightness(1.45);
+    border-radius: 50%;
+}
+
+.little-button-green {
+    background-color: greenyellow;
+}
+
+.little-button-green::before {
+    position: absolute;
+    top: 8px;
+    left: 95px;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: greenyellow;
+    filter: brightness(1.75);
+    border-radius: 50%;
+}

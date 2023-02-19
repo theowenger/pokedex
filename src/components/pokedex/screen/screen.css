@@ -1,0 +1,66 @@
+.screen {
+    position: relative;
+    background-color: lightgray;
+    padding: 50px;
+    margin-top: 40px;
+    border: 7px black solid;
+    border-radius: 5px;
+}
+
+.screen::before {
+    content: '';
+    position: absolute;
+    top: 281px;
+    left: -38px;
+    background-color: red;
+    border-right: 7px black solid;
+    transform: skewX(15deg);
+    width: 50px;
+    height: 140px;
+}
+
+.screen::after {
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    border: 7px solid black;
+}
+
+.skew {
+    position: absolute;
+    top: 18px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #404040;
+}
+
+.skew-left {
+    left: 180px;
+}
+
+.skew-right {
+    left: 270px;
+}
+
+.sound-speaker-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 375px;
+    left: 360px;
+    width: 40px;
+    height: 30px;
+}
+
+.sound-speaker {
+
+    width: 40px;
+    height: 5px;
+    background-color: black;
+}

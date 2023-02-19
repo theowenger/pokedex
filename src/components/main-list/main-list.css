@@ -35,6 +35,12 @@ ul a {
   font-size: 1.6rem;
 }
 
+.list-of-pokemon:hover {
+  background-color: lightgrey;
+  filter: brightness(1.15);
+  transition-duration: 0.3s;
+}
+
 .pokemon-sprite {
   width: 100px;
   height: 100px;

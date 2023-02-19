@@ -1,0 +1,207 @@
+.pokedex-command-container {
+    position: relative;
+    height: 100px;
+    width: 550px;
+}
+
+.cross-container {
+    position: absolute;
+    left: 430px;
+    top: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.cross-side {
+    position: absolute;
+    top: 33%;
+    width: 100%;
+    height: 33%;
+    background-color: #707070;
+    border-radius: 5px;
+}
+
+.cross-side::before {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    width: 30px;
+    height: 30px;
+    border: 5px black solid;
+    border-right: none;
+    border-radius: 5px;
+}
+
+.cross-side::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 65px;
+    width: 30px;
+    height: 30px;
+    border: 5px black solid;
+    border-left: none;
+    z-index: 1;
+    border-radius: 5px;
+
+}
+
+.cross-height {
+    position: absolute;
+    left: 33%;
+    width: 33%;
+    height: 100%;
+    background-color: #707070;
+    border-radius: 5px;
+}
+
+.cross-height::before {
+    content: '';
+    position: absolute;
+    right: -3px;
+    top: 0px;
+    width: 30px;
+    height: 30px;
+    border: 5px black solid;
+    border-bottom: none;
+    border-radius: 5px;
+
+}
+
+.cross-height::after {
+    content: '';
+    position: absolute;
+    top: 65px;
+    right: -3px;
+    width: 30px;
+    height: 30px;
+    border: 5px black solid;
+    border-top: none;
+    z-index: 1;
+    border-radius: 5px;
+
+}
+
+.cross-rounded {
+    position: absolute;
+    top: 35px;
+    left: 34px;
+    border-radius: 50%;
+    background-color: #404040;
+    height: 30px;
+    width: 30px;
+}
+
+.cross-button {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    z-index: 2;
+}
+
+.cross-button-up {
+    top: 4px;
+}
+
+.cross-button-left {
+    top: 2px;
+    left: 2px;
+}
+
+.cross-button-right {
+    top: 2px;
+    left: 70px;
+}
+
+.cross-button-down {
+    top: 70px;
+}
+
+.joystick {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border: 10px black solid;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    background-color: #404040;
+}
+
+.select-button-container {
+    position: absolute;
+    top: 10px;
+    left: 155px;
+    width: 250px;
+    height: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.select-button {
+    width: 100px;
+    height: 25px;
+    border-radius: 15px;
+    border: 6px black solid;
+}
+
+.select-button-left {
+    background-color: aqua;
+}
+
+.select-button-left::after {
+    position: absolute;
+    top: 14px;
+    left: 6px;
+    content: '';
+    width: 88px;
+    height: 7px;
+    border-radius: 0px 0px 15px 15px;
+    background-color: aqua;
+    filter: brightness(0.55);
+}
+
+.select-button-right {
+    background-color: greenyellow;
+}
+
+.select-button-right::after {
+    position: absolute;
+    top: 14px;
+    left: 156px;
+    content: '';
+    width: 88px;
+    height: 7px;
+    border-radius: 0px 0px 15px 15px;
+    background-color: greenyellow;
+    filter: brightness(0.55);
+}
+
+.search-container {
+    position: absolute;
+    left: 170px;
+    top: 50px;
+    width: 200px;
+    height: 70px;
+    border: 8px black solid;
+    border-radius: 15px;
+    background-color: greenyellow;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.search-input {
+    background-color: skyblue;
+    filter: brightness(1.75);
+    border-radius: 20px 20px 0px 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
